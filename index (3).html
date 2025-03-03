@@ -175,7 +175,7 @@
         }
 
         function resetData() {
-            if (confirm('确定要重置所有数据吗？此操作无法撤销。')) {
+            if (confirm('确定要清除所有数据吗？此操作无法撤销。')) {
                 data = {};
                 for (let i = 1; i <= 45; i++) {
                     data[i] = {};
@@ -197,7 +197,7 @@
         document.getElementById('exportButton').addEventListener('click', exportDataToExcel);
         document.getElementById('resetButton').addEventListener('click', resetData);
 
-        // 初始渲染
+        // init render
         renderGrid();
     </script>
 </body>
